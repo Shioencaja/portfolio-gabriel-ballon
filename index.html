@@ -15,16 +15,14 @@
     <title>Proyecto Final Unir</title>
   </head>
   <body>
-    <header></header>
     <nav>
       <div class="navbar">
         <a href="home"
           ><img class="logo" src="/assets/svg/logo.svg" alt="logo"
         /></a>
         <div class="navlinks" id="navlinks">
-          <a href="">Sobre mí</a>
-          <a href="">Github</a>
-          <a href="">Contacto</a>
+          <a href="https://github.com/Shioencaja" target="_blank">Github</a>
+          <a onclick="scrollFooter()">Contacto</a>
         </div>
         <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
           <i class="fa-solid fa-bars"></i>
@@ -34,15 +32,14 @@
     <main>
       <section class="hero">
         <div class="contenedor">
-          <div class="hero-text">
+          <header class="hero-text">
             <h1>Me llamo <br />Gabriel Ballón</h1>
             <p class="hero-subt">(pero me dicen chino)</p>
             <div class="contenedor-botones">
               <button onclick="scrollFunction()">Leer más</button>
               <button onclick="scrollFooter()">Contáctame</button>
             </div>
-            
-          </div>
+          </header>
           <img
             class="ilustracion"
             src="/assets/images/BALLON_FOX_GABRIEL_act_01_ilustracion_hero.webp"
@@ -54,53 +51,100 @@
       <section id="siguiente" class="info-personal"><div class="contenedor-proyectos">
         <article class="contenedor-articulo">
           <h2>Proyectos</h2><div class="proyectos-wrapper">
-            <div class="proyecto">
-              <div class="imagen">
-                <img  src="/assets/images/sol-recortado.webp" alt="Sol recortado del proyecto amuletos">
+            <a href="https://www.behance.net/gallery/141344907/Amuletos" target="_blank">
+              <div class="proyecto">
+                <div class="imagen">
+                  <img  src="/assets/images/sol-recortado.webp" alt="Sol recortado del proyecto amuletos">
+                </div>
+                <div class="proyecto-texto">
+                  <h3>Amuleto</h3>
+                  <p class="texto">Postres navideños y amuletos para el año nuevo</p>
+                </div>
+                
               </div>
-              <div class="proyecto-texto">
-                <h3>Amuleto</h3>
-                <p class="texto">Basta creer en algo para otorgarle magia. A lo largo de los años, tanto objetos como rituales se han vuelto cábalas y sortilegios
-                    de suerte o protección.</p>
+            </a>
+            <a href="https://instagram.com/Shioencaja" target="_blank">
+              <div class="proyecto">
+                <div class="imagen">
+                  <img  src="/assets/images/shio.webp" alt="Shio en caja">
+                </div>
+                <div class="proyecto-texto">
+                  <h3>Shio en Caja</h3>
+                  <p class="texto">Un proyecto sobre gatos, postres y salud mental</p>
+                </div>
               </div>
-              
-            </div>
-            <div class="proyecto">
-              <div class="imagen">
-                <img  src="/assets/images/shio.webp" alt="Shio en caja">
+            </a>
+            <a href="https://www.behance.net/gallery/151284351/Collector-Zone-Landing-Page" target="_blank">
+              <div class="proyecto">
+                <div class="imagen">
+                  <img  src="/assets/images/cinecolor.webp" alt="Landing de cinecolor">
+                </div>
+                <div class="proyecto-texto">
+                  <h3>Cinecolor Web</h3>
+                  <p class="texto">Un landing page para cinecolor</p>
+                </div>
               </div>
-              <div class="proyecto-texto">
-                <h3>Amuleto</h3>
-                <p class="texto">Basta creer en algo para otorgarle magia. A lo largo de los años, tanto objetos como rituales se han vuelto cábalas y sortilegios
-                    de suerte o protección.</p>
+            </a>
+            <a href="https://www.behance.net/gallery/124853165/Disenaton-Eventos-sociales-estratgicos" target="_blank">
+              <div class="proyecto">
+                <div class="imagen">
+                  <img  src="/assets/images/disenaton.webp" alt="Diseñaton">
+                </div>
+                <div class="proyecto-texto">
+                  <h3>Diseñaton</h3>
+                  <p class="texto">Eventos y actividades relacionados al diseño</p>
+                </div>
               </div>
-              
-            </div>
+            </a>
           </div>
         </article>
         <aside class="sobre-mi">
           <div class="contenedor">
             <h3 class="text-center">Un poco de mi</h2>
-            <div>
-              <div class="info">
+            <ul>
+              <li class="info">
                 <i class="fa-solid fa-location-dot"></i>
                 <p>Lima, Perú</p>
-              </div>
-              <div class="info">
+              </li>
+              <li class="info">
                 <i class="fa-solid fa-graduation-cap"></i>
-                <p>Pontificia universidad Católica del Perú</p>
-              </div>
-              <div class="info">
+                <p>Pontificia universidad Católica del Perú<br>Instituto Gastronómico D'Gallia</p>
+              </li>
+              <li class="info">
                 <i class="fa-solid fa-briefcase"></i>
                 <p>Angus.Studio</p>
-              </div>
-            </div>
+              </li>
+              <li class="info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>gabriel.ballon.fox@gmail.com</p>
+              </li>
+              <li class="info"> 
+                <i class="fa-brands fa-square-instagram"></i>
+                <div class="enlaces-sociales">
+                  <a target="_blank" href="https://instagram.com/Chinicooper">@Chinicooper</a> 
+                  / 
+                  <a target="_blank" href="https://instagram.com/Shioencaja">@Shioencaja</a>
+                </div>
+              </li>
+              <li class="info"> 
+                <i class="fa-brands fa-github"></i>
+                <a target="_blank" href="https://github.com/Shioencaja">ShioenCaja</a>
+              </li>
+            </ul>
           </div>
         </aside>
       </div>
       </section>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer" >
+      <h2>Hablemos</h2>
+      <form  class="formulario" onsubmit="onSubmit()">
+        <input type="text" name="nombre" placeholder="Escribe acá tu nombre" required>
+        <input type="email" name="email" placeholder="Escribe acá tu email" required>
+        <input type="number" placeholder="+51 123-456-789" required> 
+        <button type="submit">Enviar</button>
+      </form>
+    </footer >
     <div id="particles-js"></div>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>

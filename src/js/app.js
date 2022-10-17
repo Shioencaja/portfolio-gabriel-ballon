@@ -22,6 +22,14 @@ function scrollFooter() {
     inline: "start",
   });
 }
+
+// al enviar un formulario
+
+function onSubmit() {
+  alert(
+    "Gracias por probar el formulario, esta página ha sido creada solo para la Actividad final del curso. No se le agregó funcionalidad para evitar el spam o softwares maliciosos"
+  );
+}
 //particulas del fondo
 particlesJS("particles-js", {
   particles: {

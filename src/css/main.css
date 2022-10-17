@@ -22,6 +22,35 @@ img {
 body {
   margin: 0px;
 }
+footer {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 5vw;
+}
+.formulario {
+  width: 100%;
+  border-radius: 999px;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer input {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+footer input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*Versión para Mozilla*/
+footer input[type="number"] {
+  -moz-appearance: textfield;
+}
 hr {
   border-top: 3px solid black;
   margin-bottom: 3rem;
@@ -56,9 +85,7 @@ nav {
   top: 0px;
   background-color: white;
   width: 100%;
-}
-.flex-wrap {
-  flex-wrap: wrap;
+  z-index: 99;
 }
 
 .navbar {
@@ -66,10 +93,10 @@ nav {
   max-width: 1184px;
   display: flex;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding-top: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
-  margin-bottom: 1rem;
+  margin-bottom: 5vh;
 }
 
 .logo {
@@ -80,13 +107,16 @@ nav {
   display: flex;
   gap: 2em;
 }
-.navlinks a {
-  overflow: hidden;
+a {
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
   text-decoration: none;
+}
+.enlaces-sociales {
+  display: flex;
+  gap: 0.5rem;
 }
 .navlinks a:hover {
   text-decoration: underline;
@@ -179,13 +209,18 @@ nav {
   justify-content: center;
   gap: 2rem;
   padding: 0;
+  height: 30vh;
+  position: sticky;
+  top: 200px;
 }
 
 .info-personal {
+  position: relative;
+  height: 100%;
+  overflow: visible;
   display: flex;
   justify-content: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding: 5vw 5vh;
   gap: 5vw;
   flex-wrap: wrap;
 }
@@ -223,11 +258,10 @@ nav {
 .proyecto-texto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   position: absolute;
   color: white;
-  padding: 1rem;
+  padding: 3rem;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
   top: 0;
@@ -246,9 +280,24 @@ nav {
 
 /* medidas mobil*/
 @media screen and (max-width: 922px) {
+  ul {
+    list-style: none;
+    padding-inline-start: 0;
+  }
   h1 {
     font-size: 2.5rem;
     line-height: 54px;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 44px;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 40px;
+  }
+  aside {
+    position: static;
   }
   .contenedor {
     justify-content: center;
@@ -295,6 +344,9 @@ nav {
   .sobre-mi {
     width: 100%;
   }
+  .sobre-mi .contenedor {
+    height: auto;
+  }
   .contenedor-articulo {
     width: 100%;
     max-width: none;
@@ -304,6 +356,9 @@ nav {
   }
   .proyecto .texto {
     width: 100%;
+  }
+  .formulario {
+    flex-direction: column;
   }
 }
 
