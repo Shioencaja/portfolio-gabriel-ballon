@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Proyecto Final Unir</title>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <div class="navbar">
+        <a href="home"
+          ><img class="logo" src="/assets/svg/logo.svg" alt="logo"
+        /></a>
+        <div class="navlinks" id="navlinks">
+          <a href="">Sobre mí</a>
+          <a href="">Github</a>
+          <a href="">Contacto</a>
+        </div>
+        <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="contenedor">
+          <div class="hero-text">
+            <h1>Me llamo <br />Gabriel Ballón</h1>
+            <p class="hero-subt">(pero me dicen chino)</p>
+            <div class="contenedor-botones">
+              <button onclick="scrollFunction()">Leer más</button>
+              <button onclick="scrollFooter()">Contáctame</button>
+            </div>
+            
+          </div>
+          <img
+            class="ilustracion"
+            src="/assets/images/BALLON_FOX_GABRIEL_act_01_ilustracion_hero.webp"
+            alt="ilutración propia"
+          />
+        </div>
+      </section>
+      <hr >
+      <section id="siguiente" class="info-personal"><div class="contenedor-proyectos">
+        <article class="contenedor-articulo">
+          <h2>Proyectos</h2><div class="proyectos-wrapper">
+            <div class="proyecto">
+              <div class="imagen">
+                <img  src="/assets/images/sol-recortado.webp" alt="Sol recortado del proyecto amuletos">
+              </div>
+              <div class="proyecto-texto">
+                <h3>Amuleto</h3>
+                <p class="texto">Basta creer en algo para otorgarle magia. A lo largo de los años, tanto objetos como rituales se han vuelto cábalas y sortilegios
+                    de suerte o protección.</p>
+              </div>
+              
+            </div>
+            <div class="proyecto">
+              <div class="imagen">
+                <img  src="/assets/images/shio.webp" alt="Shio en caja">
+              </div>
+              <div class="proyecto-texto">
+                <h3>Amuleto</h3>
+                <p class="texto">Basta creer en algo para otorgarle magia. A lo largo de los años, tanto objetos como rituales se han vuelto cábalas y sortilegios
+                    de suerte o protección.</p>
+              </div>
+              
+            </div>
+          </div>
+        </article>
+        <aside class="sobre-mi">
+          <div class="contenedor">
+            <h3 class="text-center">Un poco de mi</h2>
+            <div>
+              <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Lima, Perú</p>
+              </div>
+              <div class="info">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p>Pontificia universidad Católica del Perú</p>
+              </div>
+              <div class="info">
+                <i class="fa-solid fa-briefcase"></i>
+                <p>Angus.Studio</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f1e973790b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

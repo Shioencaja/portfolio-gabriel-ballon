@@ -1,0 +1,316 @@
+* {
+  font-family: "Roboto";
+  font-size: 16px;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+button {
+  font-size: 12px;
+  line-height: 22px;
+  color: white;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  border-radius: 999px;
+  width: max-content;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+body {
+  margin: 0px;
+}
+hr {
+  border-top: 3px solid black;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 54px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  width: 100%;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  height: 30px;
+}
+
+.navlinks {
+  display: flex;
+  gap: 2em;
+}
+.navlinks a {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.navlinks a:hover {
+  text-decoration: underline;
+}
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.hero-subt {
+  margin-bottom: 2rem;
+}
+.contenedor-botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  gap: 1rem;
+}
+.contenedor-proyectos {
+  width: 100%;
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  gap: 1rem;
+}
+
+.ilustracion {
+  object-fit: scale-down;
+  max-height: 480px;
+  width: auto;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#toggle-menu {
+  display: none;
+}
+
+#toggle-menu:checked ~ .navlinks {
+  display: block;
+}
+.info {
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1em;
+  justify-items: start;
+}
+.sobre-mi {
+  width: 30%;
+}
+
+.sobre-mi .contenedor {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+.info-personal {
+  display: flex;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  gap: 5vw;
+  flex-wrap: wrap;
+}
+
+.contenedor-articulo {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.proyectos-wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.proyecto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+  gap: 1em;
+  overflow: hidden;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+.proyecto .imagen {
+  width: 100%;
+  object-fit: scale-down;
+
+  max-width: 550px;
+  max-height: 550px;
+}
+
+.proyecto-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+}
+.proyecto:hover {
+  transform: scale(1.05);
+}
+.proyecto-texto:hover {
+  opacity: 1;
+}
+
+/* medidas mobil*/
+@media screen and (max-width: 922px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 54px;
+  }
+  .contenedor {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .contenedor-botones {
+    width: 100%;
+    justify-content: center;
+  }
+  .ilustracion {
+    width: 100%;
+    height: auto;
+  }
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+  .navlinks.responsive {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+    background-color: white;
+  }
+  .contenedor-proyectos {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .info-personal {
+    flex-wrap: wrap-reverse;
+  }
+  .sobre-mi {
+    width: 100%;
+  }
+  .contenedor-articulo {
+    width: 100%;
+    max-width: none;
+  }
+  .proyecto {
+    flex-wrap: wrap-reverse;
+  }
+  .proyecto .texto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .proyectos-wrapper {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
