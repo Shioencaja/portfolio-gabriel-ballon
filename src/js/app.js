@@ -14,22 +14,10 @@ function scrollFunction() {
     inline: "start",
   });
 }
-function scrollFooter() {
-  let e = document.getElementById("footer");
-  e.scrollIntoView({
-    block: "start",
-    behavior: "smooth",
-    inline: "start",
-  });
-}
-
-// al enviar un formulario
-
 function onSubmit() {
-  alert(
-    "Gracias por probar el formulario, esta página ha sido creada solo para la Actividad final del curso. No se le agregó funcionalidad para evitar el spam o softwares maliciosos"
-  );
+  window.open("mailto:gabriel.ballon.fox@gmail.com");
 }
+
 //particulas del fondo
 particlesJS("particles-js", {
   particles: {
